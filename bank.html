@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Inside</title>
+    <link href="./dist/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-yellow-100 h-screen flex flex-col justify-center">
+    <header>
+        <h1 class="text-5xl font-semibold text-center">
+            Lets get some<span class="text-purple-700 font-bold"> Money!!</span>
+        </h1>
+    </header>
+    <main class="w-11/12 mx-auto max-w-[960px]">
+        <section class="mt-9 pt-4">
+            <div class="deposit-opions flex flex-wrap items-center justify-between">
+                <div class="card w-72 bg-purple-400 shadow-xl rounded-lg">
+                    <div class="card-body ">
+                        <h2 class="card-title font-semibold text-3xl">Deposit</h2>
+                        <p class="font-bold text-3xl">$ <span id="deposit-total">00</span></p>
+                    </div>
+                </div>
+                <div class="card w-72 bg-green-400 shadow-xl rounded-lg">
+                    <div class="card-body">
+                        <h2 class="card-title font-semibold text-3xl">Withdraw</h2>
+                        <p class="font-bold text-3xl">$ <span id="WithDraw-total">00</span></p>
+                    </div>
+                </div>
+                <div class="card w-72 bg-blue-400 shadow-xl rounded-lg">
+                    <div class="card-body ">
+                        <h2 class="card-title font-semibold text-3xl">Balance</h2>
+                        <p class="font-bold text-3xl">$ <span id="amount-total">1200</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- deposit  and WithDraw -->
+        <section class="mt-8">
+            <div class="deposit-opions flex flex-wrap items-center justify-between">
+                <div class="card w-[450px] bg-teal-400 shadow-xl rounded-lg">
+                    <div class="card-body font-semibold">
+                        <h2 class="card-title text-2xl">Please Deposit</h2>
+                        <input id="deposit-field" type="text" placeholder="$ Amount you want to deposit"
+                            class="mb-2 input input-bordered input-secondary w-full" />
+                        <button id="btn-deposit" class="w-[200px] btn btn-outline btn-primary">Deposit</button>
+                    </div>
+                </div>
+                <div class="card w-[450px] bg-emerald-400 shadow-xl rounded-lg">
+                    <div class="card-body">
+                        <h2 class="card-title font-semibold">Please WithDraw</h2>
+                        <input id="withdraw-field" type="text" placeholder="$ Amount you want to withdraw"
+                            class="mb-2 input input-bordered input-secondary w-full" />
+                        <button id="btn-withdraw" class="w-[200px] btn btn-outline btn-primary">WithDraw</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="./js/utilities.js"></script>
+    <script src="./js/functional.js"></script>
+</body>
+
+</html>
